@@ -1,0 +1,98 @@
+@media only screen and (max-width: 990px) { 
+	.add{
+		width:100%;
+		max-width:900px;
+		/* display:none; */
+		margin:0 auto;
+		text-align:center;
+	}
+	.sec{
+		width:100%;
+		max-width:900px;
+		margin:0 auto;
+		text-align:center;
+	}
+	.add1{
+		width:100%;
+		max-width:900px;
+		margin:0 auto;
+		text-align:center;
+	}
+ } 
+@media only screen and (max-width: 990px) { 
+
+	.asec{
+		width:100%;
+		max-width:900px;
+		margin:0 auto;
+		text-align:center;
+	}
+	.aadd1{
+		width:100%;
+		max-width:900px;
+		margin:0 auto;
+		text-align:center;
+	}
+ }
+@media only screen and (max-width: 990px) { 
+	.add{
+		width:100%;
+		max-width:900px;
+		/* display:none; */
+		margin:0 auto;
+		text-align:center;
+	}
+	.lsec{
+		width:100%;
+		max-width:900px;
+		margin:0 auto;
+		text-align:center;
+	}
+}
+@media only screen and (max-width: 990px) { 
+	.cadd{
+		width:100%;
+		max-width:900px;
+		/* display:none; */
+		margin:0 auto;
+		text-align:center;
+	}
+	.csec{
+		width:100%;
+		max-width:900px;
+		margin:0 auto;
+		text-align:center;
+	}
+	.cadd1{
+		width:100%;
+		max-width:900px;
+		margin:0 auto;
+		text-align:center;
+	}
+ }
+ @media only screen and (max-width: 380px) { 
+	
+	.allpic{
+		width:100%;
+		max-width:400px;
+		
+	}
+	
+ }
+ @media only screen and (max-width: 990px) { 
+	.add{
+		width:100%;
+		max-width:900px;
+		margin:0 auto;
+		text-align:center;
+	}
+	.cl6sec{
+		width:100%;
+		max-width:900px;
+		margin:0 auto;
+		text-align:center;
+	}
+	.pdf{
+		margin:0 auto;
+	}
+}
