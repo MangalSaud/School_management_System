@@ -1,2 +1,2 @@
-# School_management_Web
-School_management_Web
+# School_management_system
+School_management_system
