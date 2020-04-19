@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="stylelogin.css" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
 <section class="header">
 		<h1>Admin Area</h1>
 		<section class="but">

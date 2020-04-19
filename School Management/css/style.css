@@ -530,20 +530,49 @@ li.dropdown {
 	text-align: center;
 	font-size:30px;
 	font-weight: bold;
-	color: black;
-	text-decoration:underline;
+	color: #FF0000;
+	margin-bottom: 15px;
 	}
 .pdf{
 	background-color:#F0F0F0;
 	width:95%;
 	max-width:630px;
-	height:500px;
-	margin-top:40px;
+	height:auto;
+	margin-top:30px;
 	margin-left:5px;
+	margin-bottom: 5px;
+	padding-bottom: 15px;
 	border: 3px solid black;
 	border-shadow:10px;
 	border-radius:8px;
 	overflow:hidden;
+}
+.pdf table{
+	margin: 0 auto;
+	font-size: 18px;
+	border-collapse: collapse;
+	width: 550px;
+	border: 2px solid red;
+	border-radius: 15px 15px 10px 10px;
+	box-shadow:0 0 20px rgba(0, 0, 0, 0.25);
+	
+
+	
+}
+.pdf table thead tr th{
+	background-color: red;
+	color: white;
+	padding: 10px;
+	border: 2px solid green;
+	
+}
+.pdf table tbody tr td{
+	background-color: green;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	border: 2px solid red;
+	
 }
 .dropbtn {
 	color:red;

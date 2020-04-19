@@ -6,9 +6,36 @@
 			<a href="index.php">Home page</a>
 			<a href="aboutuspost.php">About Us</a>
 			<a href="contactus.php">Contact Us</a>
-			<a href="admission.php">Admission</a>
-			<a href="classes.php">Classes</a>
-			<a href="results.php">Results</a>
+		  </div>
+		</div>
+		<div class="dropdown">
+		  <button class="dropbtn">Admission</button>
+		  <div class="dropdown-content">
+			<a href="6admission.php">Class 6</a>
+			<a href="7admission.php">Class 7</a>
+			<a href="8admission.php">Class 8</a>
+			<a href="9admission.php">Class 9</a>
+			<a href="10admission.php">Class 10</a>
+		  </div>
+		</div>
+		<div class="dropdown">
+		  <button class="dropbtn">Classes</button>
+		  <div class="dropdown-content">
+			<a href="index.php">Class 6</a>
+			<a href="aboutuspost.php">Class 7</a>
+			<a href="contactus.php">Class 8</a>
+			<a href="admission.php">Class 9</a>
+			<a href="classes.php">Class 10</a>
+		  </div>
+		</div>
+		<div class="dropdown">
+		  <button class="dropbtn">Results</button>
+		  <div class="dropdown-content">
+			<a href="index.php">Class 6</a>
+			<a href="aboutuspost.php">Class 7</a>
+			<a href="contactus.php">Class 8</a>
+			<a href="admission.php">Class 9</a>
+			<a href="classes.php">Class 10</a>
 		  </div>
 		</div>
 		<div class="dropdown">

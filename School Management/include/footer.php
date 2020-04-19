@@ -1,5 +1,10 @@
  <div class="footer">
-		   <div class="connect"> <a href="https://www.facebook.com/palpurhighschool"><img src="images/icon-facebook.png" alt="" /></a> <a href="#"><img src="images/icon-twitter.png" alt="" /></a> <a href="#"><img src="images/icon-youtube.png" alt="" /></a> </div><br>
+		   <div class="connect"> 
+			   <a target="_blank" href="https://www.facebook.com/palpurhighschool"><img src="images/icon-facebook.png" alt="" /></a> 
+		       <a href="#"><img src="images/icon-twitter.png" alt="" /></a>
+			   <a href="#"><img src="images/icon-youtube.png" alt="" /></a> 
+		   </div><br>
+
 		   <div class="secti">
 		  <div class="section">
 			 <ul>

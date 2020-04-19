@@ -9,6 +9,11 @@
 		<div class="wrapper">
 		
 		<?php
+			include("Admin/include/config.php");
+			include("Admin/include/Database.php");
+			$db= new Database();
+			$query= "select * from 10admissionpage";
+			$read= $db->select($query);
 			include("include/header.php")
 		?>
 		
@@ -28,7 +33,31 @@
 			<h2>Welcome to Pall Pur High School</h2>
 				<div class="pdf">
 					<br>
-					<h3 text-align="center">Class Six Admission Information</h3>
+					<h3 text-align="center">Class Ten Admission Information</h3>
+					<table>
+								<thead>
+									<tr>
+										<th>ক্রমিক</th>
+										<th>আদায়ের বিবরণ</th>
+										<th>টাকা</th>
+									</tr>
+								</thead>
+								<tbody>
+								<?php if($read){?>
+ 					<?php while($row =$read->fetch_assoc()){?>
+									<tr>
+										<td><?php echo $row['id']; ?></td>
+										<td><?php echo $row['item']; ?></td>
+										<td><?php echo $row['taka']; ?></td>
+									</tr>
+
+								</tbody>
+					<?php } ?>
+					<?php } else{ ?>
+					<p>Data is not avilable !!</p>
+					<?php } ?>
+
+								</table>
 				</div>
 		</div>
 		

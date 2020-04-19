@@ -225,3 +225,21 @@
 	font-size:30px;
 	
 }
+.ta{
+	border-collapse: collapse;
+	background-color: green;
+	color: white;
+	width: 750px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.ta tr th{
+	background-color: red;
+	color: white;
+	border: 2px solid green;
+}
+.ta tr td{
+	text-align: center;
+	border: 2px solid red;
+}
+
