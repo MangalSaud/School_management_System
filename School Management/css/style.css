@@ -77,6 +77,16 @@
 	background:green;
 	/* border-bottom: 1px solid #555; */
 }
+p#sticker{
+	background:green;
+	color:#fff;
+}
+.stick {
+	max-width:1000px;
+	position:fixed;
+	top:0px;
+	z-index:999999999999;
+}
 
 					/* Dropdown Menu */
 
@@ -501,7 +511,7 @@ li.dropdown {
 	height: 180px;
 	}
 .allpic h3{
-	color:#black;
+	color:black;
 	font-style:italic;
 
 }
@@ -512,68 +522,71 @@ li.dropdown {
 					/* Admission Page */
 	
 .cl6sec{
-	width:66%;
-	max-width:660px;
-	height:auto;
-	/* border: 1px solid black; */
+	width: 100%;
+	max-width: 660px;
+	height: auto;
 	display:inline;
 	overflow:hidden;
 	margin:40px 0 0 0;
-	}
+}
 .cl6sec h2{
 	text-align: center;
+	margin-top: 10px;
 	font-size: 40px;
 	font-weight: bold;
-	color: #E0338C;
+	color: black;
 	}
 .cl6sec h3{
 	text-align: center;
 	font-size:30px;
 	font-weight: bold;
-	color: #FF0000;
+	color: white;
 	margin-bottom: 15px;
 	}
 .pdf{
-	background-color:#F0F0F0;
-	width:95%;
-	max-width:630px;
+	background-color:#F88003;
+	width:100%;
+	max-width:650px;
 	height:auto;
-	margin-top:30px;
+	margin-top:20px;
 	margin-left:5px;
 	margin-bottom: 5px;
 	padding-bottom: 15px;
-	border: 3px solid black;
 	border-shadow:10px;
-	border-radius:8px;
+	border-radius:10px;
 	overflow:hidden;
 }
 .pdf table{
 	margin: 0 auto;
-	font-size: 18px;
+	font-size: 0.9em;
 	border-collapse: collapse;
 	width: 550px;
-	border: 2px solid red;
-	border-radius: 15px 15px 10px 10px;
-	box-shadow:0 0 20px rgba(0, 0, 0, 0.25);
-	
+	box-shadow:0 0 20px rgba(0, 0, 0, 0.35);
+	overflow: hidden;	
 
 	
 }
 .pdf table thead tr th{
-	background-color: red;
+	background-color: #303E74;
 	color: white;
 	padding: 10px;
-	border: 2px solid green;
+	border: 0.5px solid black;
 	
 }
 .pdf table tbody tr td{
-	background-color: green;
-	color: white;
+	margin: 5px;
+	background-color: #EDEEF3;
+	color: black;
 	text-align: center;
 	padding: 10px;
-	border: 2px solid red;
+	border: 0.5px solid black;
+	
 	
 }
+.pdf table tbody tr:nth-of-type(odd){
+	background-color: #EDEEF3;
+}
+
 .dropbtn {
 	color:red;
 	background-color: #C9EEFE;

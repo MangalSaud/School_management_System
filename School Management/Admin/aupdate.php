@@ -14,6 +14,7 @@ include ("include/Database.php");
 	$query= "SELECT * FROM aboutuspage WHERE id=$id";
 	$getData= $db->select($query)->fetch_assoc();
 	
+	
 	if(isset($_POST['submit'])){
 		$post = mysqli_real_escape_string($db->link, $_POST['post']); 
 		if($post==''){
@@ -28,12 +29,8 @@ include ("include/Database.php");
 	}
  ?>
  
- <?php
-	if(isset($_POST['delete'])){
-		$query="DELETE FROM aboutuspage WHERE id=$id";
-		$deleteData = $db->delete($query);
-	}
- ?>
+
+
  
  
  <?php
@@ -41,9 +38,10 @@ include ("include/Database.php");
 		echo "<span style='color:red'>".$error."</span>";
 	}
  ?>
+			
  
  <form action="aupdate.php?id=<?php echo $id;?>" method="post">
-	 <table><br>
+	 <table>
 		 <tr>
 			<td><br>Post</td>
 			<td><br><input type="text" name="post" value="<?php echo $getData['post']?>"/><td> 
@@ -54,7 +52,7 @@ include ("include/Database.php");
 			<br>
 			<input type="submit" name="submit" value="Update" />
 			<input type="reset" value="cancel" />
-			<input  type="submit" name="delete" value="Delete" />
+			<input type="submit" name="delete" value="Delete" />
 			</td> 
 		 </tr>
 	 </table>
@@ -62,7 +60,26 @@ include ("include/Database.php");
  <br>
  <button style="margin-left:20px;background-color:white;"> <a style="text-decoration:none;color:blue;font-size:20px;" href="aboutuspost.php">Go back</a></button>
  
+ <?php
+
+
+	$query = "select * from aboutuspage where id='$id'";
+	$getImg = $db->select($query);
+
+	if(isset($_POST['delete'])){
+		$query="DELETE FROM aboutuspage WHERE id=$id";
+		$deleteData = $db->delete($query);
+	
+		 //image delete from folder 
+		if ($getImg) {
+			while ($imgdata = $getImg->fetch_assoc()) {
+			$delimg = $imgdata['image'];
+			unlink($delimg);
+			}
+		}
  
+	}
+ ?>
  
  
  

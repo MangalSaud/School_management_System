@@ -73,5 +73,21 @@
 			include("include/footer.php")
 		?>
 		</div>
+		<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+	
+		<script type="text/javascript">
+				$(document).ready(function() {
+					var s = $("#sticker");
+					var pos = s.position();					   
+					$(window).scroll(function() {
+						var windowpos = $(window).scrollTop();
+						if (windowpos >= pos.top) {
+							s.addClass("stick");
+						} else {
+							s.removeClass("stick");	
+						}
+					});
+				});
+		</script> 
 	</body>
 </html>

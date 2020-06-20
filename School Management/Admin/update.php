@@ -13,9 +13,9 @@ include ("include/Database.php");
 	$db= new Database();
 	$query= "SELECT * FROM homepage WHERE id=$id";
 	$getData= $db->select($query)->fetch_assoc();
-	
-	
-	if(isset($_POST['submit'])){
+	?>
+<?php
+	if(isset($_POST['update'])){
 		$title = mysqli_real_escape_string($db->link, $_POST['title']); 
 		$post = mysqli_real_escape_string($db->link, $_POST['post']); 
 		if($title=='' || $post==''){
@@ -31,13 +31,13 @@ include ("include/Database.php");
 	}
  ?>
  <?php
+	$query = "select * from homepage where id='$id'";
+	$getImg = $db->select($query);
+	
 	if(isset($_POST['delete'])){
 		$query="DELETE FROM homepage WHERE id=$id";
-		$deleteData = $db->delete($query);
-	}else{
-	 //image delete from folder 
-		$query = "select * from homepage where id='$id'";
-		$getImg = $db->select($query);
+		$deleteData = $db->delete($query);	 
+	//image delete from folder 	
 		if ($getImg) {
 			while ($imgdata = $getImg->fetch_assoc()) {
 			$delimg = $imgdata['image'];
@@ -47,6 +47,8 @@ include ("include/Database.php");
  
 	}
  ?>
+
+
  
  
  <?php
@@ -69,7 +71,7 @@ include ("include/Database.php");
 			<td></td>
 			<td>
 			<br>
-			<input type="submit" name="submit" value="Update" />
+			<input type="submit" name="update" value="Update" />
 			<input type="reset" value="cancel" />
 			<input type="submit" name="delete" value="Delete" />
 			</td> 

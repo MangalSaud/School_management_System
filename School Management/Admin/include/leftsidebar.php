@@ -21,21 +21,21 @@
 		<div class="dropdown">
 		  <button class="dropbtn">Classes</button>
 		  <div class="dropdown-content">
-			<a href="index.php">Class 6</a>
-			<a href="aboutuspost.php">Class 7</a>
-			<a href="contactus.php">Class 8</a>
-			<a href="admission.php">Class 9</a>
-			<a href="classes.php">Class 10</a>
+			<a href="6classes.php">Class 6</a>
+			<a href="7classes.php">Class 7</a>
+			<a href="8classes.php">Class 8</a>
+			<a href="9classes.php">Class 9</a>
+			<a href="10classes.php">Class 10</a>
 		  </div>
 		</div>
 		<div class="dropdown">
 		  <button class="dropbtn">Results</button>
 		  <div class="dropdown-content">
-			<a href="index.php">Class 6</a>
-			<a href="aboutuspost.php">Class 7</a>
-			<a href="contactus.php">Class 8</a>
-			<a href="admission.php">Class 9</a>
-			<a href="classes.php">Class 10</a>
+			<a href="6result.php">Class 6</a>
+			<a href="7result.php">Class 7</a>
+			<a href="8result.php">Class 8</a>
+			<a href="9result.php">Class 9</a>
+			<a href="10result.php">Class 10</a>
 		  </div>
 		</div>
 		<div class="dropdown">

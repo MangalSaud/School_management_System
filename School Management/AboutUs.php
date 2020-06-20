@@ -13,38 +13,33 @@
 			include("include/header.php")
 		 ?>
 		  <?php
-			$db= new Database();
-			$query= "select * from aboutuspage";
-			$read= $db->select($query);
-		 ?>
-		  <?php
-			$query= "select * from aboutimage";
-			$image= $db->select($query);
-		 ?>
+				$db= new Database();
+				$query= "select * from aboutuspage";
+				$read= $db->select($query);
+			?>
+			<?php
+				if(isset($_GET['msg'])){
+					echo "<span style='color:green'>".$_GET['msg']."</span>";
+				}
+			?>
 		 
 		
 		<div class="asec">
 			<h2>Welcome to Pall Pur High School</h2>
-			<?php if($image){?>
-			 <?php while($row =$image->fetch_assoc()){?>
-			<img src="Admin/<?php echo $row['image'];?>">
-			 <?php } ?>
-		 <?php } else{ ?>
-		 <p>Data is not avilable !!</p>
-		 <?php } ?>
-			
-			
-			
-			
+
+
 			<?php if($read){?>
-				<?php while($row =$read->fetch_assoc()){?>
-					
+ 			<?php while($row =$read->fetch_assoc()){?>
+
+				<img src="Admin/<?php echo $row['image']?>"/>
 					<p><?php echo $row['post'];?><br><br></p>
-								
-			 <?php } ?>
-			 <?php } else{ ?>
-			 <p>Data is not avilable !!</p>
-			 <?php } ?>
+					
+			
+					<?php } ?>
+					<?php } else{ ?>
+					<p>Data is not avilable !!</p>
+					<?php } ?>
+			
 		</div>
 		<div class="aadd1">
 			<div class="searchbar">

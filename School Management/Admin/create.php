@@ -62,7 +62,7 @@
 						<td><br>
 							<input type="file" name="image"/>
 						</td>
-					</tr>
+				</tr>
 				 <tr>
 					<td><br>Post</td>
 					<td><br><input type="text" name="post" placeholder="please enter your post"/></td> 

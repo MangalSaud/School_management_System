@@ -6,7 +6,7 @@
 					<img src="images/name.png">
 				</div>	
 			</div>
-		<div class="menu">
+		<div class="menu" id="sticker">
 		<ul>
 			<li><a href="index.php">Home</a></li>
 			<li><a href="AboutUs.php">About Us</a></li>
@@ -64,3 +64,19 @@
 			<li><a href="contactus.php">Contact Us</a></li>
 		</u>
 		</div>
+		<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+	
+		<script type="text/javascript">
+				$(document).ready(function() {
+					var s = $("#sticker");
+					var pos = s.position();					   
+					$(window).scroll(function() {
+						var windowpos = $(window).scrollTop();
+						if (windowpos >= pos.top) {
+							s.addClass("stick");
+						} else {
+							s.removeClass("stick");	
+						}
+					});
+				});
+		</script> 

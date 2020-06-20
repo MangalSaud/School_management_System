@@ -37,24 +37,24 @@
 	}
  ?>
 
- <table>
+ <table class="ta">
  <tr>
-	<th width="20%">Email</th>
-	<th width="20%">Facebook</th>
-	<th width="15%">Mobile</th>
-	<th width="15%">Telephone</th>
-	<th width="15%">Fax</th>
-	<th width="15%">Action</th>
+	<th >Email</th>
+	<th >Facebook</th>
+	<th>Mobile</th>
+	<th >Telephone</th>
+	<th >Fax</th>
+	<th>Action</th>
  </tr>
  <?php if($read){?>
  <?php while($row =$read->fetch_assoc()){?>
 	 <tr>
-		<td Style="text-align:center;border:1px solid black;"><?php echo $row['email'] ?></td>
-		<td Style="text-align:center;border:1px solid black;"><?php echo $row['facebook'] ?></td>
-		<td Style="text-align:center;border:1px solid black;"><?php echo $row['mobile'] ?></td>
-		<td Style="text-align:center;border:1px solid black;"><?php echo $row['telephone'] ?></td>
-		<td Style="text-align:center;border:1px solid black;"><?php echo $row['fax'] ?></td>
-		<td Style="text-align:center;border:1px solid black;"><button><a style="text-decoration:none;color:red;font-size:20px;" href="cupdate.php?id=<?php echo urlencode($row['id']);?>">Edit</a></button></td>
+		<td ><?php echo $row['email'] ?></td>
+		<td ><?php echo $row['facebook'] ?></td>
+		<td ><?php echo $row['mobile'] ?></td>
+		<td ><?php echo $row['telephone'] ?></td>
+		<td ><?php echo $row['fax'] ?></td>
+		<td ><button><a style="text-decoration:none;color:red;font-size:20px;" href="cupdate.php?id=<?php echo urlencode($row['id']);?>">Edit</a></button></td>
 	 </tr>
  <?php } ?>
  <?php } else{ ?>

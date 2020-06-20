@@ -15,7 +15,6 @@
 
 
 ?>
-
 <!DOCTYPE html>
 <html>
 <head> <link href="stylelogin.css" rel="stylesheet"></head>
@@ -42,13 +41,15 @@
 
  <table>
  <tr>
-	<th width="65%">Post</th>
+	<th width="20%">Image</th>
+	<th width="45%">Post</th>
 	<th width="15%">Action</th>
  </tr>
  <?php if($read){?>
  <?php while($row =$read->fetch_assoc()){?>
  <tr>
-	<td Style="text-align:justify;border:1px solid black;"><?php echo $fm->textShorten($row['post'],300); ?></td>
+	<td Style="text-align:center;border:1px solid black;"><img src="<?php echo $row['image']?>" height="50px" width="100px"/></td>
+	<td Style="text-align:justify;border:1px solid black;"><?php echo $fm->textShorten($row['post'],100); ?></td>
 	<td Style="text-align:center;border:1px solid black;"><button><a style="text-decoration:none;color:red;font-size:20px;" href="aupdate.php?id=<?php echo urlencode($row['id']);?>">Edit</a></button></td>
  </tr>
  <?php } ?>
